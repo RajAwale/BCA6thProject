@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #2C3E50;
+    --secondary-color: #ECF0F1;
+    --accent-color: #E74C3C;
+    --text-color: #FFFFFF;
+    --card-background: #34495E;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.page-container {
+    width: 800px;
+}
+.page-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-size: 28px;
+}
+.logout-btn{
+    margin-bottom: 1rem;
+}
+.form-container {
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.form-section {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+label {
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+input {
+    padding: 8px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+}
+.checkbox-group {
+    flex-direction: row;
+    align-items: center;
+}
+.checkbox-group label {
+    margin-left: 5px;
+}
+.form-actions {
+    text-align: left;
+}
+button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: darken(var(--accent-color), 10%);
+}
+#map {
+    height: 400px;
+    margin-top: 20px;
+}
+#pickupList {
+    margin-top: 15px;
+}

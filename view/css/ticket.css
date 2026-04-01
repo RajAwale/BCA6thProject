@@ -1,0 +1,99 @@
+.bus-info {
+    margin: 2rem auto 0;
+    width: 600px;
+    text-align: center;
+    background-color: #2C3E50;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.bus-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.bus-info p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+.seat-container-outer {
+    display: flex;
+    justify-content: center;
+}
+.seat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    width: 300px;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.last-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 3px; 
+}
+.seat {
+    width: 40px;
+    height: 40px;
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.seat:hover {
+    background-color: var(--accent-color);
+}
+.gap {
+    width: 40px;
+}
+.hide {
+    display: none;
+}
+.row .booked, .last-row .booked {
+    background-color: #797979;
+}
+.newbook {
+    background-color: var(--accent-color);
+}
+.pickup-info{
+    margin: .5rem auto 1rem;
+    padding: 1rem;
+    width: 400px;
+    text-align: justify;
+    background-color: #fff;
+}
+.book-ticket{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book-btn{
+    margin: auto;
+    padding: 10px 15px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+.book-btn:hover {
+    background-color: var(--primary-color);
+}
+.book-ticket b{
+    margin-right: .25rem;
+}

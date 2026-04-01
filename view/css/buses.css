@@ -1,0 +1,55 @@
+.ticket-page-info{
+    width: max-content;
+    margin: 2rem auto 0;
+    font-size: 2.5rem;
+}
+.ticket-listing{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ticket {
+    background-color: var(--text-color);
+    margin: .75rem 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    border-left: 5px solid var(--accent-color);
+}
+.ticket-upper, .ticket-lower{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ticket-upper p{
+    color: var(--accent-color);
+}
+.ticket-lower{
+    margin: 1rem 0;
+}
+.ticket-lower i{
+    margin-left: .25rem;
+}
+.has-ac{
+    margin-left: .5rem;
+}
+.ticket-price {
+    background-color: #E0E0E0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: var(--accent-color);
+}
+.fa-ticket{
+    color: #000;
+}
+.view-seats-btn {
+    font-size: .8rem;
+    background-color: #E0E0E0;
+    border-radius: 5px;
+    padding: .5rem;
+    border: 1px solid #545353;
+    cursor: pointer;
+}
