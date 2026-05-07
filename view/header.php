@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<!-- <?php session_start(); ?> -->
 <!-- header section -->
 <header class="header">
     <div class="title" onclick="window.location.href='/busticket/view'">MahaBus</div>
@@ -7,7 +7,12 @@
         <div class="buttons">
             <span class="username">
                 Hi, <?php echo $_SESSION['username']; ?>!
-                <i class="fas fa-map-marker-alt" onclick="openLocationModal()" style="cursor: pointer;"></i>
+                <!-- <i class="fas fa-map-marker-alt" onclick="openLocationModal()" style="cursor: pointer;">
+                    <span class="location">Add Location</span>
+                </i> -->
+
+                <span  class="location" onclick="openLocationModal()" style="cursor: pointer; margin-left: 1rem;"> Add Location</span>
+               
             </span>
             <span class="booking-history-txt" onclick="window.location.href='./bookings.php'">Booking history</span>
             <button onclick="window.location.href='./../backend/logout.php'">Log out</button>

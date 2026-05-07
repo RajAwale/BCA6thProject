@@ -22,7 +22,7 @@
         
         $options = [
             'http' => [
-                'header' => "User-Agent: MahaBus/1.0 (rubekmhzn7@gmail.com)\r\n"
+                'header' => "User-Agent: MahaBus/1.0 (rajawale0123@gmail.com)\r\n"
             ]
         ];
         $context = stream_context_create($options);

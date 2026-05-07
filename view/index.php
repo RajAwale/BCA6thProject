@@ -83,7 +83,7 @@
   </section>
 
   <footer>
-    Created by Rubek and Stephen
+    Created by Raj Awale and Rujan Maharjan
   </footer>
 
   <script>
