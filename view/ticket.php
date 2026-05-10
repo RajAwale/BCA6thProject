@@ -68,7 +68,8 @@
 
     <div class="seat-container-outer">
         <?php 
-            echo '<div class="seat-container" data-id="'. $bid .'">
+            // ── data-price added so ticket.js can read it ──────────────────
+            echo '<div class="seat-container" data-id="'. $bid .'" data-price="'. $ticketPrice .'">
                 <div class="row">
                     '. (getSeatStatus($connection, $bid, 'A1') == 0 ? '<div class="seat">A1</div>' : '<div class="seat booked">A1</div>') . 
                     (getSeatStatus($connection, $bid, 'A2') == 0 ? '<div class="seat">A2</div>' : '<div class="seat booked">A2</div>') .'
@@ -123,7 +124,7 @@
         <?php 
             echo ($_SESSION && $_SESSION['loggedin']==true) ? 
             "<div class='book-txt'>Select a seat to book</div>
-            <button class='book-btn'>Book</button>" :
+            <button class='book-btn' id='book-btn-1'>Book</button>" :
             "<b>Login </b> to book the ticket"; 
          ?>
     </div>
